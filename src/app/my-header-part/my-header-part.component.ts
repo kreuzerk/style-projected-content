@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-my-header-part',
   template: `
-    <div>
+    <div part="some">
       <ng-content></ng-content>
     </div>
   `,
