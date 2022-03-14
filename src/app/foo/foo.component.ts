@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-foo',
   template: `
-    <p>
+    <p style="margin-left: var(--margin-left)">
       foo works!
     </p>
   `,

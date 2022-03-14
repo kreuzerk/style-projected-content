@@ -2,3 +2,7 @@
   margin-right: 400px;
   margin-left: 400px;
 }
+
+app-my-header-part::part(content) {
+  margin-left: 20px;
+}

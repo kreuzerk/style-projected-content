@@ -1,8 +1,53 @@
 <div class="container">
+  <!--
   <h3>Without styling projected content</h3>
   <app-my-header>
     <a>Some link</a>
     <button>Some button</button>
     <app-foo></app-foo>
   </app-my-header>
+
+
+  <h3>With ng-deep usage</h3>
+  <my-header-ng-deep>
+    <a>Some link</a>
+    <button>Some button</button>
+    <app-foo></app-foo>
+  </my-header-ng-deep>
+
+  <h3>Shadow DOM usage</h3>
+  <app-my-header-shadow>
+    <a>Some link</a>
+    <button>Some button</button>
+    <app-foo></app-foo>
+  </app-my-header-shadow>
+
+  <h3>Encapsulation none usage</h3>
+  <app-my-header-ve-none>
+    <a>Some link</a>
+    <button>Some button</button>
+    <app-foo></app-foo>
+  </app-my-header-ve-none>
+
+  <h3>CSS var</h3>
+  <app-my-header-css-var>
+    <a>Some link</a>
+    <button>Some button</button>
+    <app-foo></app-foo>
+  </app-my-header-css-var>
+
+  <h3>Global styles</h3>
+  <app-my-header-global-styles>
+    <a>Some link</a>
+    <button>Some button</button>
+    <app-foo></app-foo>
+  </app-my-header-global-styles>
+  -->
+  <h3>CSS Part</h3>
+  <app-my-header-part>
+    <a part="content">Some link</a>
+    <button part="content">Some button</button>
+    <app-foo part="content"></app-foo>
+  </app-my-header-part>
+
 </div>
