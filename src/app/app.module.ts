@@ -10,6 +10,8 @@ import { MyHeaderVeNoneComponent } from './my-header-ve-none/my-header-ve-none.c
 import { MyHeaderCssVarComponent } from './my-header-css-var/my-header-css-var.component';
 import { MyHeaderGlobalStylesComponent } from './my-header-global-styles/my-header-global-styles.component';
 import { MyHeaderPartComponent } from './my-header-part/my-header-part.component';
+import { MyHeaderDirectiveComponent } from './my-header-directive/my-header-directive.component';
+import {MyHeaderDirectiveDirective} from "./my-header-directive/my-header-directive.directive";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MyHeaderPartComponent } from './my-header-part/my-header-part.component
     MyHeaderVeNoneComponent,
     MyHeaderCssVarComponent,
     MyHeaderGlobalStylesComponent,
-    MyHeaderPartComponent
+    MyHeaderPartComponent,
+    MyHeaderDirectiveComponent,
+    MyHeaderDirectiveDirective
   ],
   imports: [
     BrowserModule

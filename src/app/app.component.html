@@ -1,12 +1,10 @@
 <div class="container">
-  <!--
   <h3>Without styling projected content</h3>
   <app-my-header>
     <a>Some link</a>
     <button>Some button</button>
     <app-foo></app-foo>
   </app-my-header>
-
 
   <h3>With ng-deep usage</h3>
   <my-header-ng-deep>
@@ -42,7 +40,6 @@
     <button>Some button</button>
     <app-foo></app-foo>
   </app-my-header-global-styles>
-  -->
   <h3>CSS Part</h3>
   <app-my-header-part>
     <a part="content">Some link</a>
@@ -50,4 +47,16 @@
     <app-foo part="content"></app-foo>
   </app-my-header-part>
 
+  <h3>With directives</h3>
+  <app-my-header-directive>
+    <a headerPadding>Some link</a>
+    <button headerPadding>Some button</button>
+    <app-foo headerPadding></app-foo>
+  </app-my-header-directive>
+  <a>Test</a>
+  <my-header-ng-deep>
+    <a headerPadding>Some link</a>
+    <button headerPadding>Some button</button>
+    <app-foo headerPadding></app-foo>
+  </my-header-ng-deep>
 </div>

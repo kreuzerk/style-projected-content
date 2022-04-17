@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-foo',
   template: `
-    <p style="margin-left: var(--margin-left)">
-      foo works!
+    <p>
+      link from foo component
     </p>
   `,
-  styles: [
-  ]
+  styles: [],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class FooComponent implements OnInit {
 

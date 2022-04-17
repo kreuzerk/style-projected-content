@@ -1,9 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'my-header-ng-deep',
+  selector: 'app-my-header-directive',
   template: `
-    <div>
+    <div part="wrapper">
       <ng-content></ng-content>
     </div>
   `,
@@ -15,18 +15,13 @@ import {Component, OnInit} from '@angular/core';
         width: 100%;
         height: 80px;
         background: #d5d2d2;
-
-        ::ng-deep > * {
-          margin-left: 20px;
-        }
       }
     `
   ]
 })
-export class MyHeaderNgDeepComponent implements OnInit {
+export class MyHeaderDirectiveComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

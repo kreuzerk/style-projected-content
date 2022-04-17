@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-my-header-part',
   template: `
-    <div part="some">
+    <div part="wrapper">
       <ng-content></ng-content>
     </div>
   `,
@@ -16,12 +16,9 @@ import { Component, OnInit } from '@angular/core';
         height: 80px;
         background: #d5d2d2;
       }
-
-      app-my-header-part::part(content) {
-        margin-left: 20px;
-      }
     `
-  ]
+  ],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class MyHeaderPartComponent implements OnInit {
 

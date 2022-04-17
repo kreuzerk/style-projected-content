@@ -9,17 +9,16 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   `,
   styles: [`
     app-my-header-ve-none {
-
       div {
         display: flex;
         align-items: center;
         width: 100%;
         height: 80px;
         background: #d5d2d2;
-      }
 
-      button, a, app-foo {
-        margin-left: 20px;
+        > * {
+          margin-left: 20px;
+        }
       }
     }
   `],
